@@ -1,5 +1,5 @@
 ## Hi there 👋
-![](src/image/LORENZ MIGUEL GRACIA.png?raw=true)
+![](src/image/LORENZ%20MIGUEL%20GRACIA.png?raw=true)
 
 <!--
 **lorenz-MotionGraphics/lorenz-MotionGraphics** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
