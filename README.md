@@ -4,3 +4,10 @@
 
 ***
 <a href="https://app.daily.dev/lorenzgracia"><img src="https://api.daily.dev/devcards/v2/gJbvjTwHoXt5OqCHsRwJv.png?type=wide&r=k3i" width="652" alt="lorenz gracia's Dev Card"/></a>
+
+***
+| Title                 | Link                     |
+|-----------------------|--------------------------|
+| Facebook Profile      | [Facebook](https://www.facebook.com/lorencecolare) |
+| Mastodon Profile      | [Mastodon](https://mastodon.social/@lorenz_bussiness_console_acc) |
+| Daily.dev   | [Visit Daily.dev](https://daily.dev) |
