@@ -4,6 +4,9 @@
 
 ***
 <a href="https://app.daily.dev/lorenzgracia"><img src="https://api.daily.dev/devcards/v2/gJbvjTwHoXt5OqCHsRwJv.png?type=wide&r=k3i" width="652" alt="lorenz gracia's Dev Card"/></a>
-[![lorenz gracia's Dev Card](https://api.daily.dev/devcards/v2/gJbvjTwHoXt5OqCHsRwJv.png?type=wide&r=k3i&ts=<?= time() ?>)](https://app.daily.dev/lorenzgracia)
+
+
+[![lorenz gracia's Dev Card](https://api.daily.dev/devcards/v2/gJbvjTwHoXt5OqCHsRwJv.png?type=wide&r=k3i&v=1)](https://app.daily.dev/lorenzgracia)
+
 
 
