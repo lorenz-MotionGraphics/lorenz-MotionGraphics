@@ -7,11 +7,11 @@
 | programming languages | frameworks | tools | scripting languages |   |
 |---|---|---|---|---|
 | C plus plus | Bootstrap | Visual Studio Code | html | ![](https://geps.dev/progress/80) |
-| Python | Jquery | Sublime | javascript |
-| Java | Ionic | Turbo C++ | php |
-| C Sharp | Electron | Visual Studio 2022 | VBscript |
-| C language | Material UI | Notepad plus plus | Powershell |
-| Ruby | Laravel | Android Studio | Bash |
+| Python | Jquery | Sublime | javascript | ![](https://geps.dev/progress/68) |
+| Java | Ionic | Turbo C++ | php | ![](https://geps.dev/progress/50) |
+| C Sharp | Electron | Visual Studio 2022 | VBscript | ![](https://geps.dev/progress/5) |
+| C language | Material UI | Notepad plus plus | Powershell | ![](https://geps.dev/progress/70) |
+| Ruby | Laravel | Android Studio | Bash | ![](https://geps.dev/progress/50) |
 
 **Connect with me:**
 * not yet available
