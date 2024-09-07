@@ -4,9 +4,9 @@
 *im lorenz you can call me by lorence ○ im very interested in computer stuff ○ my goal is to have a nice, clean job*
 
 **Skills:**
-| programming languages | frameworks | tools | scripting languages |
-|---|---|---|---|
-| C plus plus | Bootstrap | Visual Studio Code | html |
+| programming languages | frameworks | tools | scripting languages |   |
+|---|---|---|---|---|
+| C plus plus | Bootstrap | Visual Studio Code | html | ![](https://geps.dev/progress/80) |
 | Python | Jquery | Sublime | javascript |
 | Java | Ionic | Turbo C++ | php |
 | C Sharp | Electron | Visual Studio 2022 | VBscript |
