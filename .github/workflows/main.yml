@@ -1,19 +1,29 @@
-name: daily-devcard
+name: Update Daily.dev DevCard
+
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: "0 0 * * *"
+    - cron: '0 0 * * *'  # Runs every day at midnight (UTC)
+  workflow_dispatch:  # Allows manual trigger
+
 jobs:
-  devcard:
+  update-readme:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: devcard
-        uses: dailydotdev/action-devcard@3.0.0
-        with:
-          user_id: ${{ secrets.USER_ID }}
-          commit_message: "chore: update ${filename}"
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Update README
+        run: |
+          # Use a timestamp to create a unique query string
+          TIMESTAMP=$(date +%s)
+          
+          # Replace the old query string with a new one in README.md
+          sed -i "s/\(https:\/\/api\.daily\.dev\/devcards\/.*?type=wide&r=k3i\).*/\1&v=$TIMESTAMP)/" README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Automated DevCard image refresh"
+          git push
