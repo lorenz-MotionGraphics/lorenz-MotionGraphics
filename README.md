@@ -1,7 +1,7 @@
 ![](src/image/LORENZ%20MIGUEL%20GRACIA.png?raw=true)
 
 **Bio:**
-*im lorenz you can call me by lorence ○ im very interested in computer stuff ○ my goal is to have a nice, clean job*
+*im lorenz you can call me by lorence | im very interested in computer stuff | my goal is to have a nice, clean job*
 
 **Skills:**
 | programming languages | frameworks | tools | scripting languages |   |
