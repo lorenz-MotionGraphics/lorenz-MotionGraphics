@@ -10,4 +10,4 @@
 |-----------------------|--------------------------|
 | Facebook Profile      | [Facebook](https://www.facebook.com/lorencecolare) |
 | Mastodon Profile      | [Mastodon](https://mastodon.social/@lorenz_bussiness_console_acc) |
-| Daily.dev   | [Visit Daily.dev](https://daily.dev) |
+| Google Developer Profile   | [Google Developers](https://developers.google.com/profile/u/109864175807278175040) |
