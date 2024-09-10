@@ -21,6 +21,6 @@
 * Currently Learning
 
 ***
-<a href="https://app.daily.dev/lorenzgracia"><img src="https://api.daily.dev/devcards/v2/gJbvjTwHoXt5OqCHsRwJv.png?type=wide&r=k3i" width="652" alt="lorenz gracia's Dev Card"/></a>
+<a href="https://app.daily.dev/lorenzgracia"><img src="https://api.daily.dev/devcards/v2/gJbvjTwHoXt5OqCHsRwJv.png?type=wide&r=gkz" width="652" alt="lorenz gracia's Dev Card"/></a>
 
 ***
