@@ -2,17 +2,7 @@
 
 **Bio:**
 *im lorenz you can call me by lorence | im very interested in computer stuff | my goal is to have a nice, clean job*
-
-**Skills:**
-| programming languages | frameworks | tools | scripting languages |   |
-|---|---|---|---|---|
-| C plus plus | Bootstrap | Visual Studio Code | html | ![](https://geps.dev/progress/80) |
-| Python | Jquery | Sublime | javascript | ![](https://geps.dev/progress/68) |
-| Java | Ionic | Turbo C++ | php | ![](https://geps.dev/progress/50) |
-| C Sharp | Electron | Visual Studio 2022 | VBscript | ![](https://geps.dev/progress/5) |
-| C language | Material UI | Notepad plus plus | Powershell | ![](https://geps.dev/progress/70) |
-| Ruby | Laravel | Android Studio | Bash | ![](https://geps.dev/progress/50) |
-
+![](./profile-3d-contrib/profile-green-animate.svg)
 **Connect with me:**
 * not yet available
 
