@@ -1,9 +1,8 @@
 ![](src/image/LORENZ%20MIGUEL%20GRACIA.png?raw=true)
 ***
-<img src="https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Djava,cpp,py,kotlin,rust,php,html,css,js" />
-<img src="https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Dreact,flutter,nodejs,bootstrap,electron" />
-<img src="https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Dmysql,npm" />
-
+<img src="https://skillicons.dev/icons?i=java,cpp,py,kotlin,rust,php,html,css,js" />
+<img src="https://skillicons.dev/icons?i=react,flutter,nodejs,bootstrap,electron" />
+<img src="https://skillicons.dev/icons?i=mysql,npm" />
 ***
 ![](./profile-3d-contrib/profile-night-rainbow.svg)
 ***
