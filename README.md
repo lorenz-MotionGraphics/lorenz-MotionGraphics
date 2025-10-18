@@ -1,5 +1,3 @@
-![](src/image/LORENZ%20MIGUEL%20GRACIA.png?raw=true)
-***
 <img src="https://skillicons.dev/icons?i=java,cpp,py,kotlin,rust,php,html,css,js" />
 <img src="https://skillicons.dev/icons?i=react,flutter,nodejs,bootstrap,electron,tailwind" />
 <img src="https://skillicons.dev/icons?i=mysql,sqlite,npm" />
