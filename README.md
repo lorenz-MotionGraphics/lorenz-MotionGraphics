@@ -1,8 +1,4 @@
-<img src="https://skillicons.dev/icons?i=java,cpp,py,kotlin,rust,php,html,css,js" />
-<img src="https://skillicons.dev/icons?i=react,flutter,nodejs,bootstrap,electron,tailwind" />
-<img src="https://skillicons.dev/icons?i=mysql,sqlite,npm" />
-<img src="https://skillicons.dev/icons?i=gradle,androidstudio,vscode,vim,sublime" />
-
+<img src="https://skillicons.dev/icons?i=java,cpp,py,kotlin,rust,php,html,css,js,react,flutter,nodejs,bootstrap,electron,tailwind,mysql,sqlite,npm,gradle,androidstudio,vscode,vim,sublime" />
 
 ***
 
