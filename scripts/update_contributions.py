@@ -1,39 +1,42 @@
-import requests
-import datetime
 import os
+import datetime
 import re
+import requests
 
 TOKEN = os.environ["GITHUB_TOKEN"]
-HEADERS = {"Authorization": f"Bearer {TOKEN}"}
+OWNER = os.environ["GITHUB_REPOSITORY"].split("/")[0]
+REPO = os.environ["GITHUB_REPOSITORY"].split("/")[1]
 
-USERNAME = os.environ.get("GITHUB_REPOSITORY").split("/")[0]
+HEADERS = {"Authorization": f"Bearer {TOKEN}"}
 YEAR = datetime.datetime.now().year
 
 def get_commits_per_month():
-    monthly = [0] * 12
+    counts = [0] * 12
+    page = 1
 
-    for month in range(1, 13):
-        start = f"{YEAR}-{month:02d}-01T00:00:00Z"
-        end_month = month + 1 if month < 12 else 1
-        end_year = YEAR if month < 12 else YEAR + 1
-        end = f"{end_year}-{end_month:02d}-01T00:00:00Z"
+    while True:
+        url = f"https://api.github.com/repos/{OWNER}/{REPO}/commits"
+        r = requests.get(url, headers=HEADERS, params={"per_page": 100, "page": page})
 
-        url = (
-            f"https://api.github.com/search/commits"
-            f"?q=author:{USERNAME}+committer-date:{start}..{end}"
-        )
+        if r.status_code != 200 or not r.json():
+            break
 
-        r = requests.get(url, headers={**HEADERS, "Accept": "application/vnd.github.cloak-preview"})
-        if r.status_code == 200:
-            monthly[month - 1] = r.json().get("total_count", 0)
+        for c in r.json():
+            date = c["commit"]["author"]["date"]
+            dt = datetime.datetime.fromisoformat(date.replace("Z", ""))
 
-    return monthly
+            if dt.year == YEAR:
+                counts[dt.month - 1] += 1
+
+        page += 1
+
+    return counts
 
 def update_readme(data):
     with open("README.md", "r", encoding="utf-8") as f:
         content = f.read()
 
-    new_chart = (
+    chart = (
         "```mermaid\n"
         "xychart-beta\n"
         f"    title \"GitHub Contributions ({YEAR})\"\n"
@@ -45,7 +48,7 @@ def update_readme(data):
 
     updated = re.sub(
         r"<!-- CONTRIBUTIONS_CHART_START -->.*?<!-- CONTRIBUTIONS_CHART_END -->",
-        f"<!-- CONTRIBUTIONS_CHART_START -->\n{new_chart}\n<!-- CONTRIBUTIONS_CHART_END -->",
+        f"<!-- CONTRIBUTIONS_CHART_START -->\n{chart}\n<!-- CONTRIBUTIONS_CHART_END -->",
         content,
         flags=re.S
     )
@@ -54,5 +57,5 @@ def update_readme(data):
         f.write(updated)
 
 if __name__ == "__main__":
-    commits = get_commits_per_month()
-    update_readme(commits)
+    data = get_commits_per_month()
+    update_readme(data)
