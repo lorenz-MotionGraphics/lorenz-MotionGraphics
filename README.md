@@ -6,11 +6,11 @@
 
 ***
 <a href="https://app.daily.dev/lorenzgracia"><img src="https://api.daily.dev/devcards/v2/gJbvjTwHoXt5OqCHsRwJv.png?type=wide&r=946" width="652" alt="lorenz gracia's Dev Card"/></a>
-## Graph (Mermaid)
+## 📊 Contributions in 2025
 
 ```mermaid
-graph TD
-    A -->|4| B
-    A -->|2| C
-    C -->|1| D
-    B -->|5| D
+xychart-beta
+    title "GitHub Contributions (2025)"
+    x-axis ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+    y-axis "Commits" 0 --> 120
+    bar [12, 25, 40, 30, 55, 60, 48, 70, 45, 80, 65, 90]
