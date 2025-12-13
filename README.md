@@ -8,12 +8,12 @@
 <a href="https://app.daily.dev/lorenzgracia"><img src="https://api.daily.dev/devcards/v2/gJbvjTwHoXt5OqCHsRwJv.png?type=wide&r=946" width="652" alt="lorenz gracia's Dev Card"/></a>
 
 ***
-## 📈 GitHub Contributions in 2025
 
+<!-- CONTRIBUTIONS_CHART_START -->
 ```mermaid
 xychart-beta
     title "GitHub Contributions (2025)"
     x-axis ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
-    y-axis "Commits" 0 --> 120
-    line [12, 25, 40, 30, 55, 60, 48, 70, 45, 80, 65, 90]
+    y-axis "Commits" 0 --> 200
+    line [0,0,0,0,0,0,0,0,0,0,0,0]
 
