@@ -16,4 +16,5 @@ xychart-beta
     x-axis ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
     y-axis "Commits" 0 --> 200
     line [0,0,0,0,0,0,0,0,0,0,0,0]
+```
 <!-- CONTRIBUTIONS_CHART_END -->
