@@ -12,12 +12,9 @@
 <!-- CONTRIBUTIONS_CHART_START -->
 ```mermaid
 xychart-beta
-    title "GitHub Contributions (2025)"
+    title "Contributions"
     x-axis ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
     y-axis "Commits" 0 --> 50
-    line [47,30,31,33,31,29,31,31,30,37,31,31] color #4caf50
-    points true
-    curve smooth
-
+    line [47,30,31,33,31,29,31,31,30,37,31,31]
 ```
 <!-- CONTRIBUTIONS_CHART_END -->
