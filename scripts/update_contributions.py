@@ -1,16 +1,25 @@
 import os
+import sys
 import datetime
-import re
 import requests
+import re
 
-TOKEN = os.environ["GITHUB_TOKEN"]
-OWNER = os.environ["GITHUB_REPOSITORY"].split("/")[0]
-REPO = os.environ["GITHUB_REPOSITORY"].split("/")[1]
+print("▶ Script started")
 
-HEADERS = {"Authorization": f"Bearer {TOKEN}"}
+TOKEN = os.environ.get("GITHUB_TOKEN")
+if not TOKEN:
+    print("❌ GITHUB_TOKEN not found")
+    sys.exit(1)
+
+OWNER, REPO = os.environ["GITHUB_REPOSITORY"].split("/")
 YEAR = datetime.datetime.now().year
 
-def get_commits_per_month():
+print(f"▶ Repo: {OWNER}/{REPO}")
+print(f"▶ Year: {YEAR}")
+
+HEADERS = {"Authorization": f"Bearer {TOKEN}"}
+
+def get_commits():
     counts = [0] * 12
     page = 1
 
@@ -18,23 +27,38 @@ def get_commits_per_month():
         url = f"https://api.github.com/repos/{OWNER}/{REPO}/commits"
         r = requests.get(url, headers=HEADERS, params={"per_page": 100, "page": page})
 
-        if r.status_code != 200 or not r.json():
+        print(f"Fetching page {page}: {r.status_code}")
+
+        if r.status_code != 200:
+            print(r.text)
             break
 
-        for c in r.json():
-            date = c["commit"]["author"]["date"]
-            dt = datetime.datetime.fromisoformat(date.replace("Z", ""))
+        data = r.json()
+        if not data:
+            break
 
+        for c in data:
+            d = c["commit"]["author"]["date"]
+            dt = datetime.datetime.fromisoformat(d.replace("Z", ""))
             if dt.year == YEAR:
                 counts[dt.month - 1] += 1
 
         page += 1
 
+    print("▶ Monthly counts:", counts)
     return counts
 
 def update_readme(data):
+    if not os.path.exists("README.md"):
+        print("❌ README.md not found")
+        sys.exit(1)
+
     with open("README.md", "r", encoding="utf-8") as f:
         content = f.read()
+
+    if "<!-- CONTRIBUTIONS_CHART_START -->" not in content:
+        print("❌ Chart markers missing")
+        sys.exit(1)
 
     chart = (
         "```mermaid\n"
@@ -56,6 +80,8 @@ def update_readme(data):
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(updated)
 
+    print("✅ README updated")
+
 if __name__ == "__main__":
-    data = get_commits_per_month()
+    data = get_commits()
     update_readme(data)
