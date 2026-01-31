@@ -80,7 +80,7 @@ def update_readme(data):
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(updated)
 
-    print("✅ README updated")
+    print("README updated")
 
 if __name__ == "__main__":
     data = get_commits()
