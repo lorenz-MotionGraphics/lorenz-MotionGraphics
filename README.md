@@ -1,1 +1,2 @@
-![](./profile-3d-contrib/profile-night-rainbow.svg)
+<!-- CONTRIBUTIONS_CHART_START -->
+<!-- CONTRIBUTIONS_CHART_END -->
